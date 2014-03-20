@@ -9,13 +9,6 @@ jQuery.extend(jQuery.easing, {
 $(function()
 {
 	$("#project_quick_jump_box").css({"display":"inline"}).appendTo("#header h1");
-	// $("#header h1:not(a)").hover(
-		// function(){
-		// $("#project_quick_jump_box").slideDown("fast");
-		// },
-		// function(){
-		// $("#project_quick_jump_box").slideUp("fast");
-	// });
 	/**
 	 * account
 	 */
@@ -56,6 +49,47 @@ $(function()
 	 */
 	$("#taskboard .issue").click(function(){
 		$(this).css(":befor","none");
+	});
+	/**
+	 * issues attributes
+	 */
+	$(".action-show .attributes").wrap('<div id="attributes_wrap">');
+	$("#attributes_wrap").before('<a id="attributes_btn">show attributes</a>');
+	$("#attributes_btn").addClass("attributes-hide");
+	$("#attributes_wrap").hide(0);
+	$("#attributes_btn").click(
+		function(){
+			if($(this).hasClass("attributes-hide")){
+				$("#attributes_wrap").stop(true, false).
+				slideDown("slow","easeOutQuint");
+				$(this).removeClass("attributes-hide");
+			}else{
+				$("#attributes_wrap").stop(true, false).
+				slideUp("slow","easeOutQuint");;
+				$(this).addClass("attributes-hide");
+			}
+	});
+	
+	/**
+	 * issues history
+	 */
+	$(".has-notes").wrap('<div class="balloon-right"></div>');
+	$(".has-details").wrap('<div class="balloon-left"></div>');
+
+	$('<a id="history_btn">show detail</a>').appendTo(".action-show #history h3");
+	$(".balloon-left").hide();
+	$("#history_btn").addClass("history-detail-hide");
+	$("#history_btn").click(
+		function(){
+			if($(this).hasClass("history-detail-hide")){
+				$(".balloon-left").stop(true, false).
+				slideDown("normal","easeOutQuint");
+				$(this).removeClass("history-detail-hide");
+			}else{
+				$(".balloon-left").stop(true, false).
+				slideUp("normal","easeOutQuint");;
+				$(this).addClass("history-detail-hide");
+			}
 	});
 });
 

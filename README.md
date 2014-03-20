@@ -6,8 +6,11 @@ It is based on A1 theme version 1.0.3 by Kirill Bezrukov www.redminecrm.com.
 
 ## Screenshot[screenshot1]: https://github.com/artlife3/redmine-theme-gitmike-design/blob/master/screenshot/backlog_01.png?raw=true "gitmike-design screenshot"
 [screenshot2]: https://github.com/artlife3/redmine-theme-gitmike-design/blob/master/screenshot/backlog_kanban_01.png?raw=true "gitmike-design screenshot"
+
+[screenshot3]: https://github.com/artlife3/redmine-theme-gitmike-design/blob/master/screenshot/issue.png?raw=true "gitmike-design screenshot"
 ![gitmike screenshot][screenshot1]
 ![gitmike screenshot][screenshot2]
+![gitmike screenshot][screenshot3]
 
 ## Feature
 1. The design reflected in the structure of the backlog plugin and redmine. 
@@ -47,3 +50,7 @@ support backlog plugin version v 1.0.6
 
 GPL3
 
+## Change Log
+
+* r8: issue page design.
+* r7: backlog,kanban page desgin.
