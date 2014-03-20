@@ -1,4 +1,4 @@
-Redmine gitmike theme
+Redmine gitmike-design theme
 ==============
 
 This is the theme of the design easy for beginners to understand Redmine. 
