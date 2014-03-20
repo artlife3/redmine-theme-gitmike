@@ -1,56 +1,49 @@
 Redmine gitmike theme
 ==============
 
-This is github-like theme for Redmine. 
+This is the theme of the design easy for beginners to understand Redmine. 
 It is based on A1 theme version 1.0.3 by Kirill Bezrukov www.redminecrm.com.
 
-[screenshot1]: http://dl.dropbox.com/u/8932138/screenshot/gitmike/gitmike_2013-07-12_0706.png "gitmike screenshot"
-
+## Screenshot[screenshot1]: https://github.com/artlife3/redmine-theme-gitmike-design/blob/master/screenshot/backlog_01.png?raw=true "gitmike-design screenshot"
+[screenshot2]: https://github.com/artlife3/redmine-theme-gitmike-design/blob/master/screenshot/backlog_kanban_01.png?raw=true "gitmike-design screenshot"
 ![gitmike screenshot][screenshot1]
+![gitmike screenshot][screenshot2]
+
+## Feature
+1. The design reflected in the structure of the backlog plugin and redmine. 
+1. Automatic expansion and contraction of the search form. 
+1. To change the position of project change selector. 
+1. Slide of the personal settings section. 
+1. Redmine Backlogs support.
+
+## Concept
+* There are people that dislike the redmine. 
+* Redmine is not a cause, it is in the design? 
+* this is designed to put up this hypothesis.
+
 
 ## Installation
 
-1. Download from https://github.com/makotokw/redmine-theme-gitmike/tags
-1. Move to `redmine/public/theme/gitmike`
-
-Or by using git:
-
 ```
 cd redmine/public/theme
-git clone git://github.com/makotokw/redmine-theme-gitmike.git gitmike
+git clone git://github.com/artlife3/redmine-theme-gitmike-design.git .
 ```
-
 ### Change theme
-
 Open redmine on a browser and go to Administration > Settings > Display > Theme.
 
-## Development
+### Backlog Plugin edit
 
-### Build Sass
+It allows you to use the theme.js by performing the following editing.
 
-#### development
-
-```
-cd sass
-compass watch
-```
-
-#### release
+redmine/plugins/redmine_backlogs/app/views/layouts/rb.html.erb
 
 ```
-cd sass
-compass compile -e production --force
-```
+<%= stylesheet_link_tag 'global_print.css', :plugin => 'redmine_backlogs', :media => 'print' %>
 
+<%= yield :head_tags -%>
++ <%= heads_for_theme %>```
+support backlog plugin version v 1.0.6
 ## License
 
 GPL3
 
-## Change Log
-
-* r6 2013/11/23: Dashboard (@n-rodriguez). Fixed some issues #6 #7 #8 and #10 reported from @statschner
-* r5 2013/07/21: Improvement Forms
-* r4 2013/07/12: Tested in Redmine 2.3. Updated to look like GitHub. Added assing_to and author column style on Issue Table when login user's one by @chocoby.
-* r3 2013/01/16: Tested in Redmine 2.2. Added count style and changed priority-{#id} to priority-{position_name} on Issue Table.
-* r2 2012/09/20: Removed Japanese font style in master branch, and added ja branch for Japanese.
-* r1 2012/04/12: Supported Redmine 1.3.2 
