@@ -62,19 +62,19 @@ $(function()
 			if($(this).hasClass("attributes-hide")){
 				$("#attributes_wrap").stop(true, false).
 				slideDown("slow","easeOutQuint");
-				$(this).removeClass("attributes-hide");
+				$(this).removeClass("attributes-hide").fadeTo("normal", 0.5);
 			}else{
 				$("#attributes_wrap").stop(true, false).
 				slideUp("slow","easeOutQuint");;
-				$(this).addClass("attributes-hide");
+				$(this).addClass("attributes-hide").fadeTo("normal", 1);
 			}
 	});
 	
 	/**
 	 * issues history
 	 */
-	$(".has-notes").wrap('<div class="balloon-right"></div>');
-	$(".has-details").wrap('<div class="balloon-left"></div>');
+	$(".journal.has-details").not(".has-notes").wrap('<div class="balloon-left"></div>');
+	$(".journal.has-notes").wrap('<div class="balloon-right"></div>');
 
 	$('<a id="history_btn">show detail</a>').appendTo(".action-show #history h3");
 	$(".balloon-left").hide();
@@ -84,11 +84,11 @@ $(function()
 			if($(this).hasClass("history-detail-hide")){
 				$(".balloon-left").stop(true, false).
 				slideDown("normal","easeOutQuint");
-				$(this).removeClass("history-detail-hide");
+				$(this).removeClass("history-detail-hide").fadeTo("normal", 0.3);
 			}else{
 				$(".balloon-left").stop(true, false).
 				slideUp("normal","easeOutQuint");;
-				$(this).addClass("history-detail-hide");
+				$(this).addClass("history-detail-hide").fadeTo("normal", 1);
 			}
 	});
 });
