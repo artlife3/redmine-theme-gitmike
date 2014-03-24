@@ -875,3 +875,8 @@ div.issue{
 .external{
 	word-wrap: break-word
 }
+.fff-left .project{
+	font-size:0.8em;
+	line-height:2em;
+	background-color:#D1EE77;
+}
