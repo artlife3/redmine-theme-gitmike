@@ -769,7 +769,7 @@ div.issue{
 }
 .action-show .description .wiki{
 	margin:0 0 15px 0;
-	padding: 0 8px;
+	padding: 8px 8px;
 	background-color: #F5E7BB;
 	background-color: #fff;
 	-webkit-border-radius: 15px;
