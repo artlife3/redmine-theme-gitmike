@@ -717,6 +717,9 @@ padding-bottom:10px !important;
 .story .id{
 background-color: #DFE6FC !important;
 }
+.id.project{
+background-color: #D1EE77 !important;
+}
 #userid{
 /*display: none;*/
 }
