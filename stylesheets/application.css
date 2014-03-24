@@ -872,3 +872,6 @@ div.issue{
 	margin-top: -11px;
 
 }
+.external{
+	word-wrap: break-word
+}
