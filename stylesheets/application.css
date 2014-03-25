@@ -783,7 +783,11 @@ div#issue-changesets{
 	-khtml-user-select: none;
 	-moz-user-select: none;
 }
+#issue-changesets h3{
+	line-height: 32px;
+}
 #issue-changesets_btn{
+	display: inline-block;
 	width:32px;
 	height:32px;
 	text-indent: 100%;
