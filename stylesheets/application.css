@@ -800,6 +800,8 @@ div.issue{
 }
 #history .balloon-right {
 	display: inline-block;
+	min-width: 400px;
+	float:right;
 	position: relative;
 	margin: 10px 5px 15px 15px;
 	background: #EEF8B9;
@@ -839,6 +841,7 @@ div.issue{
 
 #history .balloon-left {
 	display: inline-block;
+	min-width: 400px;
 	opacity: 0.7;
 	position: relative;
 	margin: 10px 20px 15px 5px;
