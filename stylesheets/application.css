@@ -745,6 +745,19 @@ div.issue{
 	-moz-box-shadow:  2px 3px 5px rgba(0,0,0,0.3) inset;
 	box-shadow:  2px 3px 5px rgba(0,0,0,0.3) inset;
 }
+div#issue-changesets{
+	float:none;
+	margin-top:30px;
+	padding:5px 10px 10px 10px;
+	background-color: #F5F7D4;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	-webkit-box-shadow: 2px 3px 5px rgba(0,0,0,0.3);
+	-moz-box-shadow: 2px 3px 5px rgba(0,0,0,0.3);
+	box-shadow: 2px 3px 5px rgba(0,0,0,0.3);
+}
 #attributes_btn{
 	width:16px;
 	height:16px;
@@ -799,9 +812,6 @@ div.issue{
 	border:none;
 }
 #history .balloon-right {
-	display: inline-block;
-	min-width: 400px;
-	float:right;
 	position: relative;
 	margin: 10px 5px 15px 15px;
 	background: #EEF8B9;
@@ -840,8 +850,6 @@ div.issue{
 }
 
 #history .balloon-left {
-	display: inline-block;
-	min-width: 400px;
 	opacity: 0.7;
 	position: relative;
 	margin: 10px 20px 15px 5px;

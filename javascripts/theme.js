@@ -73,8 +73,8 @@ $(function()
 	/**
 	 * issues history
 	 */
-	$(".journal.has-details").not(".has-notes").wrap('<div class="balloon"><div class="balloon-left"></div></div>');
-	$(".journal.has-notes").wrap('<div class="balloon"><div class="balloon-right"></div></div>');
+	$(".journal.has-details").not(".has-notes").wrap('<div class="balloon-left"></div>');
+	$(".journal.has-notes").wrap('<div class="balloon-right"></div>');
 
 	$('<a id="history_btn">show detail</a>').appendTo(".action-show #history h3");
 	$('<a id="issue-changesets_btn">show detail</a>').appendTo("#issue-changesets h3");
@@ -92,18 +92,18 @@ $(function()
 				$(this).addClass("history-detail-hide").fadeTo("normal", 1);
 			}
 	});
-	// $("#issue-changesets_btn").click(
-		// function(){
-			// if($(this).hasClass("history-detail-hide")){
-				// $(".balloon-left").stop(true, false).
-				// slideDown("normal","easeOutQuint");
-				// $(this).removeClass("history-detail-hide").fadeTo("normal", 0.3);
-			// }else{
-				// $(".balloon-left").stop(true, false).
-				// slideUp("normal","easeOutQuint");;
-				// $(this).addClass("history-detail-hide").fadeTo("normal", 1);
-			// }
-	// });
+	$("#issue-changesets_btn").click(
+		function(){
+			if($(this).hasClass("changesets-hide")){
+				$(".changeset").stop(true, false).
+				slideDown("normal","easeOutQuint");
+				$(this).removeClass("changesets-hide").fadeTo("normal", 0.3);
+			}else{
+				$(".changeset").stop(true, false).
+				slideUp("normal","easeOutQuint");;
+				$(this).addClass("changesets-hide").fadeTo("normal", 1);
+			}
+	});
 });
 
 
