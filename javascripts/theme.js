@@ -78,6 +78,8 @@ $(function()
 
 	$('<a id="history_btn">show detail</a>').appendTo(".action-show #history h3");
 	$('<a id="issue-changesets_btn">show detail</a>').appendTo("#issue-changesets h3");
+	$("#issue-changesets .changeset").hide();
+
 	$(".balloon-left").hide();
 	$("#history_btn").addClass("history-detail-hide");
 	$("#history_btn").click(
@@ -95,11 +97,11 @@ $(function()
 	$("#issue-changesets_btn").click(
 		function(){
 			if($(this).hasClass("changesets-hide")){
-				$(".changeset").stop(true, false).
+				$("#issue-changesets .changeset").stop(true, false).
 				slideDown("normal","easeOutQuint");
 				$(this).removeClass("changesets-hide").fadeTo("normal", 0.3);
 			}else{
-				$(".changeset").stop(true, false).
+				$("#issue-changesets .changeset").stop(true, false).
 				slideUp("normal","easeOutQuint");;
 				$(this).addClass("changesets-hide").fadeTo("normal", 1);
 			}
