@@ -759,6 +759,7 @@ div#issue-changesets{
 	box-shadow: 2px 3px 5px rgba(0,0,0,0.3);
 }
 #attributes_btn{
+	cursor: pointer;
 	width:16px;
 	height:16px;
 	display: block;
@@ -772,6 +773,7 @@ div#issue-changesets{
 	-moz-user-select: none;
 }
 #history_btn{
+	cursor: pointer;
 	width:32px;
 	height:32px;
 	text-indent: 100%;
@@ -787,6 +789,7 @@ div#issue-changesets{
 	line-height: 32px;
 }
 #issue-changesets_btn{
+	cursor: pointer;
 	display: inline-block;
 	width:32px;
 	height:32px;
