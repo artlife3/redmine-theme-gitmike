@@ -94,7 +94,9 @@ $(function()
 	/**
 	 * changesets
 	 */
-	$('<a id="issue-changesets_btn">show detail</a>').appendTo("#issue-changesets h3");
+	if($("#issue-changesets .changeset").length>1){
+		$('<a id="issue-changesets_btn">show detail</a>').appendTo("#issue-changesets h3");
+	}
 	$("#issue-changesets .changeset:not(:first)").hide();
 
 	$("#issue-changesets_btn").click(
