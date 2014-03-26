@@ -75,10 +75,7 @@ $(function()
 	 */
 	$(".journal.has-details").not(".has-notes").wrap('<div class="balloon-left"></div>');
 	$(".journal.has-notes").wrap('<div class="balloon-right"></div>');
-
 	$('<a id="history_btn">show detail</a>').appendTo(".action-show #history h3");
-	$('<a id="issue-changesets_btn">show detail</a>').appendTo("#issue-changesets h3");
-	$("#issue-changesets .changeset").hide();
 
 	$(".balloon-left").hide();
 	$("#history_btn").addClass("history-detail-hide");
@@ -94,15 +91,21 @@ $(function()
 				$(this).addClass("history-detail-hide").fadeTo("normal", 1);
 			}
 	});
+	/**
+	 * changesets
+	 */
+	$('<a id="issue-changesets_btn">show detail</a>').appendTo("#issue-changesets h3");
+	$("#issue-changesets .changeset:not(:first)").hide();
+
 	$("#issue-changesets_btn").click(
 		function(){
 			if($(this).hasClass("changesets-hide")){
-				$("#issue-changesets .changeset").stop(true, false).
-				slideDown("normal","easeOutQuint");
+				$("#issue-changesets .changeset:not(:first)").stop(true, false).
+				slideUp("normal","easeOutQuint");
 				$(this).removeClass("changesets-hide").fadeTo("normal", 0.3);
 			}else{
-				$("#issue-changesets .changeset").stop(true, false).
-				slideUp("normal","easeOutQuint");;
+				$("#issue-changesets .changeset:not(:first)").stop(true, false).
+				slideDown("normal","easeOutQuint");;
 				$(this).addClass("changesets-hide").fadeTo("normal", 1);
 			}
 	});
