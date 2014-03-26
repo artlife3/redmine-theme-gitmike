@@ -747,7 +747,6 @@ div.issue{
 }
 div#issue-changesets{
 	float:none;
-	margin-top:30px;
 	padding:5px 10px 10px 10px;
 	background-color: #F5F7D4;
 	-webkit-border-radius: 5px;
@@ -757,6 +756,10 @@ div#issue-changesets{
 	-webkit-box-shadow: 2px 3px 5px rgba(0,0,0,0.3);
 	-moz-box-shadow: 2px 3px 5px rgba(0,0,0,0.3);
 	box-shadow: 2px 3px 5px rgba(0,0,0,0.3);
+}
+div#issue-changesets h3{
+	margin:0;
+	
 }
 #attributes_btn{
 	cursor: pointer;
@@ -773,30 +776,34 @@ div#issue-changesets{
 	-moz-user-select: none;
 }
 #history_btn{
-	cursor: pointer;
+	display:inline-block;
 	width:32px;
-	height:32px;
+	height:22px;
+	line-height: 1em;
+	margin: 0 0 -5px 10px;
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
-	background: url(../images/icon/32x32/eye.png) no-repeat;
+	background: url(../images/icon/32x32/eye.png) no-repeat center center;
+	cursor: pointer;
 	user-select: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
 	-moz-user-select: none;
 }
 #issue-changesets h3{
-	line-height: 32px;
+	line-height: 1em;
 }
 #issue-changesets_btn{
+	margin-left:15px;
 	cursor: pointer;
 	display: inline-block;
-	width:32px;
-	height:32px;
+	width:16px;
+	height:1em;
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
-	background: url(../images/icon/32x32/eye.png) no-repeat;
+	background: url(../images/icon/16x16/eye.png) no-repeat center center;
 	user-select: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -818,11 +825,6 @@ div#issue-changesets{
 }
 .action-show #history{
 	position: relative;
-}
-#history_btn{
-	position: absolute;
-	right:0;
-	font-size:0.7em;
 }
 .action-show .journal{
 	padding: 10px 5px;
