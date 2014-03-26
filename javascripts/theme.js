@@ -94,23 +94,24 @@ $(function()
 	/**
 	 * changesets
 	 */
+	console.log($("#issue-changesets .changeset").length);
 	if($("#issue-changesets .changeset").length>1){
 		$('<a id="issue-changesets_btn">show detail</a>').appendTo("#issue-changesets h3");
+		$("#issue-changesets .changeset:not(:first)").hide();
+	
+		$("#issue-changesets_btn").click(
+			function(){
+				if($(this).hasClass("changesets-hide")){
+					$("#issue-changesets .changeset:not(:first)").stop(true, false).
+					slideUp("normal","easeOutQuint");
+					$(this).removeClass("changesets-hide").fadeTo("normal", 0.3);
+				}else{
+					$("#issue-changesets .changeset:not(:first)").stop(true, false).
+					slideDown("normal","easeOutQuint");;
+					$(this).addClass("changesets-hide").fadeTo("normal", 1);
+				}
+		});
 	}
-	$("#issue-changesets .changeset:not(:first)").hide();
-
-	$("#issue-changesets_btn").click(
-		function(){
-			if($(this).hasClass("changesets-hide")){
-				$("#issue-changesets .changeset:not(:first)").stop(true, false).
-				slideUp("normal","easeOutQuint");
-				$(this).removeClass("changesets-hide").fadeTo("normal", 0.3);
-			}else{
-				$("#issue-changesets .changeset:not(:first)").stop(true, false).
-				slideDown("normal","easeOutQuint");;
-				$(this).addClass("changesets-hide").fadeTo("normal", 1);
-			}
-	});
 });
 
 
