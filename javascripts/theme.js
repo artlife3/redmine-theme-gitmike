@@ -5,6 +5,17 @@ jQuery.extend(jQuery.easing, {
 	easeOutCubic: function (x, t, b, c, d) {
 		return c * ((t = t / d - 1) * t * t + 1) + b;
 	},
+	easeOutBounce: function (x, t, b, c, d) {
+		if ((t/=d) < (1/2.75)) {
+			return c*(7.5625*t*t) + b;
+		} else if (t < (2/2.75)) {
+			return c*(7.5625*(t-=(1.5/2.75))*t + .75) + b;
+		} else if (t < (2.5/2.75)) {
+			return c*(7.5625*(t-=(2.25/2.75))*t + .9375) + b;
+		} else {
+			return c*(7.5625*(t-=(2.625/2.75))*t + .984375) + b;
+		}
+	},
 });
 $(function()
 {
@@ -73,17 +84,20 @@ $(function()
 	/**
 	 * issues history
 	 */
-	$(".journal.has-details").not(".has-notes").wrap('<div class="balloon-left"></div>');
+	console.log($(".journal.has-details").length);
+	if($(".journal.has-details").length>0){
+		$(".journal.has-details").not(".has-notes").wrap('<div class="balloon-left"></div>');
+		$(".balloon-left").hide();
+		$('<a id="history_btn">show detail</a>').appendTo(".action-show #history h3");
+	}
 	$(".journal.has-notes").wrap('<div class="balloon-right"></div>');
-	$('<a id="history_btn">show detail</a>').appendTo(".action-show #history h3");
 
-	$(".balloon-left").hide();
 	$("#history_btn").addClass("history-detail-hide");
 	$("#history_btn").click(
 		function(){
 			if($(this).hasClass("history-detail-hide")){
 				$(".balloon-left").stop(true, false).
-				slideDown("normal","easeOutQuint");
+				slideDown("normal","easeOutBounce");
 				$(this).removeClass("history-detail-hide").fadeTo("normal", 0.3);
 			}else{
 				$(".balloon-left").stop(true, false).
@@ -94,20 +108,19 @@ $(function()
 	/**
 	 * changesets
 	 */
-	console.log($("#issue-changesets .changeset").length);
 	if($("#issue-changesets .changeset").length>1){
-		$('<a id="issue-changesets_btn">show detail</a>').appendTo("#issue-changesets h3");
+		$('<a id="issue-changesets_btn" class="changesets-hide">show detail</a>').appendTo("#issue-changesets h3");
 		$("#issue-changesets .changeset:not(:first)").hide();
 	
 		$("#issue-changesets_btn").click(
 			function(){
 				if($(this).hasClass("changesets-hide")){
 					$("#issue-changesets .changeset:not(:first)").stop(true, false).
-					slideUp("normal","easeOutQuint");
+					slideDown("normal","easeOutBounce");
 					$(this).removeClass("changesets-hide").fadeTo("normal", 0.3);
 				}else{
 					$("#issue-changesets .changeset:not(:first)").stop(true, false).
-					slideDown("normal","easeOutQuint");;
+					slideUp("normal","easeOutQuint");;
 					$(this).addClass("changesets-hide").fadeTo("normal", 1);
 				}
 		});
