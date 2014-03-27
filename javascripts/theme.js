@@ -16,6 +16,15 @@ jQuery.extend(jQuery.easing, {
 			return c*(7.5625*(t-=(2.625/2.75))*t + .984375) + b;
 		}
 	},
+	easeOutBack: function (x, t, b, c, d, s) {
+		if (s == undefined) s = 1.70158;
+		return c*((t=t/d-1)*t*((s+1)*t + s) + 1) + b;
+	},
+	easeInOutBack: function (x, t, b, c, d, s) {
+		if (s == undefined) s = 1.70158; 
+		if ((t/=d/2) < 1) return c/2*(t*t*(((s*=(1.525))+1)*t - s)) + b;
+		return c/2*((t-=2)*t*(((s*=(1.525))+1)*t + s) + 2) + b;
+	},
 });
 $(function()
 {
@@ -84,7 +93,6 @@ $(function()
 	/**
 	 * issues history
 	 */
-	console.log($(".journal.has-details").length);
 	if($(".journal.has-details").length>0){
 		$(".journal.has-details").not(".has-notes").wrap('<div class="balloon-left"></div>');
 		$(".balloon-left").hide();
