@@ -73,7 +73,7 @@ $(function()
 	/**
 	 * issues attributes
 	 */
-	$(".action-show .attributes").wrap('<div id="attributes_wrap">');
+	$(".controller-issues.action-show .attributes").wrap('<div id="attributes_wrap">');
 	$("#attributes_wrap").before('<a id="attributes_btn">show attributes</a>');
 	$("#attributes_btn").addClass("attributes-hide");
 	$("#attributes_wrap").hide(0);
