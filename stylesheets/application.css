@@ -768,7 +768,7 @@ div#issue-changesets .changeset:first-child{
 	border:1px solid red;
 }
 div#issue-changesets .changeset{
-	padding: 15px !important;
+	padding: 3px 15px !important;
 	line-height: 1.9em;
 }
 #attributes_btn{
