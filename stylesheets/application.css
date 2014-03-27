@@ -767,6 +767,10 @@ div#issue-changesets .changeset:first-child{
 	margin-top:10px;
 	border:1px solid red;
 }
+div#issue-changesets .changeset{
+	padding: 15px !important;
+	line-height: 1.9em;
+}
 #attributes_btn{
 	cursor: pointer;
 	width:16px;
@@ -829,10 +833,8 @@ div#issue-changesets .changeset:first-child{
 .action-show #history{
 	position: relative;
 }
-.action-show .journal{
-	padding: 10px 5px;
-}
 #history div.journal{
+	padding: 15px 15px;
 	border:none;
 }
 #history h3{
