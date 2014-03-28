@@ -26,8 +26,13 @@ jQuery.extend(jQuery.easing, {
 		return c/2*((t-=2)*t*(((s*=(1.525))+1)*t + s) + 2) + b;
 	},
 });
+
 $(function()
 {
+	var script = document.createElement("script");
+	script.setAttribute("src", "/themes/redmine-theme-gitmike-design/javascripts/jquery.ui.touch-punch.min.js");
+	document.getElementsByTagName("head")[0].appendChild(script);
+
 	$("#project_quick_jump_box").css({"display":"inline"}).appendTo("#header h1");
 	/**
 	 * account
