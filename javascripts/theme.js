@@ -96,7 +96,7 @@ $(function()
 	if($(".journal.has-details").length>0){
 		$(".journal.has-details").not(".has-notes").wrap('<div class="balloon-left"></div>');
 		$(".balloon-left").hide();
-		$('<a id="history_btn">show detail</a>').appendTo(".action-show #history h3");
+		$('<a id="history_btn">show detail</a>').appendTo(".action-show #history > h3");
 	}
 	$(".journal.has-notes").wrap('<div class="balloon-right"></div>');
 
