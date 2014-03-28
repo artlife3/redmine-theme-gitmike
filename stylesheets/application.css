@@ -415,13 +415,13 @@ position: absolute !important;*/
 	background: -moz-linear-gradient(top, #61B3E9, #115786);
 	background: -o-linear-gradient(top, #61B3E9, #115786);
 	background: linear-gradient(top, #61B3E9, #115786);
-
-     left: 0;
-     margin:0 12px;
-     width: auto;
-     border: none;
-     position: static;
-     
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#61B3E9',endColorstr='#115786')";
+	background: -ms-linear-gradient(top, #61B3E9, #115786);
+	left: 0;
+	margin:0 12px;
+	width: auto;
+	border: none;
+	position: static;
 }
 #main-menu ul{
      display:inline-table;
@@ -436,21 +436,25 @@ line-height: 10px;
 border-bottom: 2px solid #ADCFE6 !important;
 }
 #main-menu ul li a:hover{
-background: -webkit-linear-gradient(top, #266189, #0E3149);
-background: -moz-linear-gradient(top, #266189, #0E3149);
-background: -o-linear-gradient(top, #266189, #0E3149);
-background: linear-gradient(top, #266189, #0E3149);
-border:none;
+	background: -webkit-linear-gradient(top, #266189, #0E3149);
+	background: -moz-linear-gradient(top, #266189, #0E3149);
+	background: -o-linear-gradient(top, #266189, #0E3149);
+	background: linear-gradient(top, #266189, #0E3149);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#266189',endColorstr='#0E3149')";
+	background: -ms-linear-gradient(top, #266189, #0E3149);
+	border:none;
 }
 #main-menu ul li a.selected{
-background: -webkit-linear-gradient(top, #266189, #0E3149);
-background: -moz-linear-gradient(top, #266189, #0E3149);
-background: -o-linear-gradient(top, #266189, #0E3149);
-background: linear-gradient(top, #266189, #0E3149);
-
-border-bottom: 2px solid #FF022A !important;
-color: #fff;
-text-shadow: 0 1px 0 rgba(9, 8, 8, 0.52);
+	background: -webkit-linear-gradient(top, #266189, #0E3149);
+	background: -moz-linear-gradient(top, #266189, #0E3149);
+	background: -o-linear-gradient(top, #266189, #0E3149);
+	background: linear-gradient(top, #266189, #0E3149);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#266189',endColorstr='#0E3149')";
+	background: -ms-linear-gradient(top, #266189, #0E3149);
+	
+	border-bottom: 2px solid #FF022A !important;
+	color: #fff;
+	text-shadow: 0 1px 0 rgba(9, 8, 8, 0.52);
 }
 /**
  * 	backlogs
