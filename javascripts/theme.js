@@ -98,10 +98,6 @@ $(function()
 		$(".balloon-left").hide();
 		$('<a id="history_btn">show detail</a>').appendTo(".action-show #history > h3");
 	}
-	$("[name=commit]").click(function(){
-		alert("t");
-		//$(this).parents(".balloon-right")
-	});
 	$(".journal.has-notes").wrap('<div class="balloon-right"></div>');
 
 	$("#history_btn").addClass("history-detail-hide");

@@ -407,6 +407,9 @@ position: absolute !important;*/
 	display:block;
 	color:black;
 }
+#quick-search form > div{
+	display: block !important;
+}
 #quick-search input[type="text"]{
 	width:160px;
 }
