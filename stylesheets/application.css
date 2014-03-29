@@ -553,6 +553,9 @@ a:link.close_sprint{
 #backlogs_container .header .menu .item ul li{
 	width:100% !important;
 }
+#backlogs_container .stories .story .subject{
+	white-space: nowrap;
+}
 /**
  * kanban
  */
