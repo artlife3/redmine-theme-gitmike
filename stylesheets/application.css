@@ -380,25 +380,17 @@ select#project_quick_jump_box{
 	height:2em;
 	position: absolute;
 	right:0;
-	margin-right: 20px;
+	margin: 11px 20px 0 0 ;
 	min-width: 100px;
 }
 #quick-search label{
 	display:inline-block;
-	text-indent: 100% !important;
-	white-space: nowrap !important;
-	overflow: hidden !important;
-	
-	/*clip: rect(1px, 1px, 1px, 1px);
-position: absolute !important;*/
+	text-indent:-9999px;
 }
 #quick-search label a{
-	margin-top:5px;
+	margin-top:2px;
 	position: absolute;
-	text-indent: 100% ;
-	white-space: nowrap;
-	overflow: hidden;
-	
+	text-indent:-9999px;
 	background: url(../images/search-icon.png) no-repeat left;
 	width: 24px;
 	height: 24px;
