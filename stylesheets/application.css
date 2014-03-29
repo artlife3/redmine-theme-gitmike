@@ -494,10 +494,13 @@ text-decoration: underline !important;
 	background: none;
 }
 #taskboard{
-margin:0 !important;
+	margin:0 !important;
 }
 a:link.close_sprint{
-color: rgba(122, 207, 244, 0.62) !important;
+	color: rgba(122, 207, 244, 0.62) !important;
+}
+.next-prev-links{
+	padding: 0 10px;
 }
 /**
  * 	ditail
@@ -733,7 +736,7 @@ div.issue{
 }
 .subject h3{
 	text-shadow: 0 2px 5px #aaa;
-	padding: 5px 0;
+	padding: 5px 5px;
 	background: #D1EE77;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
