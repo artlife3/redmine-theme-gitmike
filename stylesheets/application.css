@@ -554,7 +554,7 @@ a:link.close_sprint{
 	width:100% !important;
 }
 #backlogs_container .stories .story .subject{
-	white-space: nowrap;
+	white-space: nowrap !important;
 }
 /**
  * kanban
