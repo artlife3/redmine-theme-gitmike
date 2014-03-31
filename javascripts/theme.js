@@ -30,9 +30,16 @@ jQuery.extend(jQuery.easing, {
 $(function()
 {
 	var status = $(".status_id.editable.story_field .t");
-	for (var i=0; i <status.length; i++) {
-		if(status[i].text()=="未"){
-			status[i].parents(".model.story.fff-wrapper").addClass("test");
+	for (var i = 0; i < status.length; i++) {
+		var j = status.eq(i).text();
+		if(j=="未"||j=="todo"){
+			status.eq(i).parents(".model.story.fff-wrapper").addClass("status_todo");
+		}
+		if(j=="作業中"||j=="In Process"){
+			status.eq(i).parents(".model.story.fff-wrapper").addClass("status_inprocess");
+		}
+		if(j=="確認中"||j=="To Verify"){
+			status.eq(i).parents(".model.story.fff-wrapper").addClass("status_toverify");
 		}
 	};
 	var script = document.createElement("script");
