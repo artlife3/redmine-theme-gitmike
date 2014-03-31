@@ -557,8 +557,7 @@ a:link.close_sprint{
 	white-space: nowrap !important;
 }
 .model.story.fff-wrapper.closed{
-	color: #8CA3DF !important;
-	background:#E1E1F5 !important;
+	opacity:0.4;
 }
 .status_id.editable.story_field{
 }
