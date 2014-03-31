@@ -29,6 +29,15 @@ jQuery.extend(jQuery.easing, {
 
 $(function()
 {
+	var status = $(".status_id.editable.story_field .t");
+	for (var i=0; i <status.length; i++) {
+		if(status[i].text()=="未"){
+			status[i].parents(".model.story.fff-wrapper").addClass("test");
+		}
+	};
+	var script = document.createElement("script");
+	script.setAttribute("src", "/themes/redmine-theme-gitmike-design/javascripts/jquery.ui.touch-punch.min.js");
+	document.getElementsByTagName("head")[0].appendChild(script);
 
 	$("#project_quick_jump_box").css({"display":"inline"}).appendTo("#header h1");
 	/**

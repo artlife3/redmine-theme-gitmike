@@ -556,6 +556,12 @@ a:link.close_sprint{
 #backlogs_container .stories .story .subject{
 	white-space: nowrap !important;
 }
+.model.story.fff-wrapper.closed{
+	color: #8CA3DF !important;
+	background:#E1E1F5 !important;
+}
+.status_id.editable.story_field{
+}
 /**
  * kanban
  */
