@@ -29,9 +29,6 @@ jQuery.extend(jQuery.easing, {
 
 $(function()
 {
-	var script = document.createElement("script");
-	script.setAttribute("src", "/themes/redmine-theme-gitmike-design/javascripts/jquery.ui.touch-punch.min.js");
-	document.getElementsByTagName("head")[0].appendChild(script);
 
 	$("#project_quick_jump_box").css({"display":"inline"}).appendTo("#header h1");
 	/**
@@ -49,6 +46,7 @@ $(function()
 	/**
 	 * search form
 	 */
+	
 	var search_w = 100;
 	var search_w_expand = search_w+100;
 	$("#quick-search input").focusin(
