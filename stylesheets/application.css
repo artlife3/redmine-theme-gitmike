@@ -578,16 +578,16 @@ a:link.close_sprint{
 	color: #2957C9 !important;
 }
 .model.story.fff-wrapper.closed{
-	background: #eee !important;
+	background: #A79F9F !important;
 	color: #bbb !important;
 }
 .model.story.fff-wrapper.status_toverify{
-	background: orange !important;
+	background: #F8DD97 !important;
 }
 .model.story.fff-wrapper.status_inprocess{
 }
 .model.story.fff-wrapper.status_todo{
-	color: #999 !important;
+	color: #2E2E30 !important;
 	background: white !important;
 }
 
