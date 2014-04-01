@@ -523,8 +523,8 @@ a:link.close_sprint{
 	background-color:#D91C1C !important;
 	padding-bottom:10px !important;
 }
-#backlogs_container .stories{
-	background-color:#4e83f1 !important;
+#backlogs_container .stories .story{
+	background: #F2F2FC !important;
 	color: #2957C9 !important;
 }
 #backlogs_container .closedbacklog, #backlogs_container .backlog{
@@ -533,6 +533,24 @@ a:link.close_sprint{
 	padding-bottom:10px;
 	background: #2957C9 !important;
 }
+#backlogs_container .stories .story.closed{
+	background: #eee !important;
+	color: #A79F9F !important;
+}
+.story-swimlane.status_closed{
+	background: #eee !important;
+	opacity:0.5;
+}
+#backlogs_container .stories .story.status_toverify{
+	background: #F8EDD1 !important;
+}
+#backlogs_container .stories .story.status_inprocess{
+}
+#backlogs_container .stories .story.status_todo{
+	color: #2E2E30 !important;
+	background: white !important;
+}
+
 .ui-icon{
 	background: url(../images/ui-icons_222222_256x240_2.png) !important;
 }
@@ -541,6 +559,14 @@ a:link.close_sprint{
 }
 #backlogs_container .stories .story .subject{
 	white-space: nowrap !important;
+}
+.external{
+	word-wrap: break-word
+}
+.fff-left .project{
+	font-size:0.8em;
+	line-height:2em;
+	background-color:#A8C4ED;
 }
 
 /**
@@ -563,25 +589,6 @@ a:link.close_sprint{
 	background: -ms-linear-gradient(top, #F8FAFD, #F2F2FC) !important;
 	color: #2957C9 !important;
 }
-
-.model.story.fff-wrapper.closed{
-	background: #eee !important;
-	color: #A79F9F !important;
-}
-.story-swimlane.status_closed{
-	background: #eee !important;
-	opacity:0.5;
-}
-.model.story.fff-wrapper.status_toverify{
-	background: #F8EDD1 !important;
-}
-.model.story.fff-wrapper.status_inprocess{
-}
-.model.story.fff-wrapper.status_todo{
-	color: #2E2E30 !important;
-	background: white !important;
-}
-
 .label_sprint_impediments{
 	background: -webkit-gradient(linear, left top, left bottom, from(#F9EAD8), to(#FACB83)) !important;
 	background: -moz-linear-gradient(top, #F9EAD8, #FACB83) !important;
@@ -716,7 +723,6 @@ a:link.close_sprint{
     transform:  rotate(-19deg)
                         skew(-40deg,-3deg)
                         translate(-13px,-13px);
-
 }
 .story .id{
 background-color: #DFE6FC !important;
@@ -852,12 +858,10 @@ div#issue-changesets .changeset{
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-
 	border: 1px solid #ccc;
 	-webkit-box-shadow: 2px 3px 5px rgba(0,0,0,0.3);
 	-moz-box-shadow: 2px 3px 5px rgba(0,0,0,0.3);
 	box-shadow: 2px 3px 5px rgba(0,0,0,0.3);
-	
 }
 #history .balloon-right:after, #history .balloon-right:before {
 	top: 30%;
@@ -869,7 +873,6 @@ div#issue-changesets .changeset{
 	position: absolute;
 	pointer-events: none;
 }
-
 #history .balloon-right:after {
 	border-color: rgba(238, 248, 185, 0);
 	border-left-color: #EEF8B9;
