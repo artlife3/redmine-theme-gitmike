@@ -524,7 +524,7 @@ a:link.close_sprint{
 	padding-bottom:10px !important;
 }
 #backlogs_container .stories .story{
-	background: #F2F2FC !important;
+	background: #F2F2FC;
 	color: #2957C9 !important;
 }
 #backlogs_container .closedbacklog, #backlogs_container .backlog{
@@ -534,21 +534,22 @@ a:link.close_sprint{
 	background: #2957C9 !important;
 }
 #backlogs_container .stories .story.closed{
-	background: #eee !important;
+	background: #eee;
 	color: #A79F9F !important;
 }
 .story-swimlane.status_closed{
-	background: #eee !important;
+	background: #eee;
 	opacity:0.5;
 }
 #backlogs_container .stories .story.status_toverify{
-	background: #F8EDD1 !important;
+	background: #F8EDD1;
 }
 #backlogs_container .stories .story.status_inprocess{
+	background: #F2F2FC;
 }
 #backlogs_container .stories .story.status_todo{
 	color: #2E2E30 !important;
-	background: white !important;
+	background: white;
 }
 
 .ui-icon{
