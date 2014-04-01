@@ -578,8 +578,8 @@ a:link.close_sprint{
 	color: #2957C9 !important;
 }
 .model.story.fff-wrapper.closed{
-	background: #A79F9F !important;
-	color: #bbb !important;
+	background: #eee !important;
+	color: #A79F9F !important;
 }
 .model.story.fff-wrapper.status_toverify{
 	background: #F8DD97 !important;
