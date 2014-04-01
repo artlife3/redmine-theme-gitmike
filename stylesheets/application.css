@@ -523,6 +523,10 @@ a:link.close_sprint{
 	background-color:#D91C1C !important;
 	padding-bottom:10px !important;
 }
+#backlogs_container .stories{
+	background: #4e83f1;
+	color: #2957C9 !important;
+}
 #backlogs_container .stories .story{
 	background: #F2F2FC;
 	color: #2957C9 !important;
