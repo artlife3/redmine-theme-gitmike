@@ -556,11 +556,7 @@ a:link.close_sprint{
 #backlogs_container .stories .story .subject{
 	white-space: nowrap !important;
 }
-.model.story.fff-wrapper.closed{
-	opacity:0.4;
-}
-.status_id.editable.story_field{
-}
+
 /**
  * kanban
  */
@@ -581,6 +577,20 @@ a:link.close_sprint{
 	background: -ms-linear-gradient(top, #F8FAFD, #F2F2FC);
 	color: #2957C9 !important;
 }
+.model.story.fff-wrapper.closed{
+	background: #eee !important;
+	color: #bbb !important;
+}
+.model.story.fff-wrapper.status_toverify{
+	background: orange !important;
+}
+.model.story.fff-wrapper.status_inprocess{
+}
+.model.story.fff-wrapper.status_todo{
+	color: #999 !important;
+	background: white !important;
+}
+
 .label_sprint_impediments{
 	background: -webkit-gradient(linear, left top, left bottom, from(#F9EAD8), to(#FACB83)) !important;
 	background: -moz-linear-gradient(top, #F9EAD8, #FACB83) !important;
