@@ -42,6 +42,11 @@ $(function()
 			status.eq(i).parents(".model.story.fff-wrapper").addClass("status_toverify");
 		}
 	};
+	var status = $(".story-swimlane .story.closed");
+	for (var i = 0; i < status.length; i++) {
+		status.eq(i).parents(".story-swimlane").addClass("status_closed");
+	};
+
 	var script = document.createElement("script");
 	script.setAttribute("src", "/themes/redmine-theme-gitmike-design/javascripts/jquery.ui.touch-punch.min.js");
 	document.getElementsByTagName("head")[0].appendChild(script);

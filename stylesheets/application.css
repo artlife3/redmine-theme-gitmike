@@ -581,6 +581,10 @@ a:link.close_sprint{
 	background: #eee !important;
 	color: #A79F9F !important;
 }
+.story-swimlane.status_closed{
+	background: #eee !important;
+	opacity:0.4;
+}
 .model.story.fff-wrapper.status_toverify{
 	background: #F8EDD1 !important;
 }
