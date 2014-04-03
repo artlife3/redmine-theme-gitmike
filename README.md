@@ -51,6 +51,7 @@ redmine/plugins/redmine_backlogs/app/views/layouts/rb.html.erb
 13 <%= stylesheet_link_tag 'rtl', :media => 'all' if l(:direction) == 'rtl' %>
 14 <% end %>
 
+20 + <script src="/themes/redmine-theme-gitmike-design/javascripts/jquery.ui.touch-punch.min.js"></script>
 21 <%= yield :head_tags -%>
 22 + <%= heads_for_theme %>
 23 + <% if Backlogs.setting[:show_redmine_std_header] %>
