@@ -528,8 +528,12 @@ a:link.close_sprint{
 	color: #2957C9 !important;
 }
 #backlogs_container .stories .story{
-	background: #F2F2FC;
-	color: #2957C9 !important;
+	background-image: none;
+	background-color: transparent;
+	-ms-filter: none;
+	filter: none;
+	background-color: #F2F2FC;
+	color: #2957C9;
 }
 #backlogs_container .closedbacklog, #backlogs_container .backlog{
 	border: 5px solid #2957C9 !important;
@@ -546,14 +550,14 @@ a:link.close_sprint{
 	opacity:0.5;
 }
 #backlogs_container .stories .story.status_toverify{
-	background: #F8EDD1;
+	background-color: #F8EDD1;
 }
 #backlogs_container .stories .story.status_inprocess{
-	background: #F2F2FC;
+	background-color: #F2F2FC;
 }
 #backlogs_container .stories .story.status_todo{
-	color: #2E2E30 !important;
-	background: white;
+	background-color: #fff;
+	color: #2E2E30;
 }
 
 .ui-icon{

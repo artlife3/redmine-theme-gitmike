@@ -41,10 +41,17 @@ It allows you to use the theme.js by performing the following editing.
 redmine/plugins/redmine_backlogs/app/views/layouts/rb.html.erb
 
 ```
-<%= stylesheet_link_tag 'global_print.css', :plugin => 'redmine_backlogs', :media => 'print' %>
+11 <% if Backlogs.setting[:show_redmine_std_header] %>
+12 - <%= stylesheet_link_tag 'application', :media => 'all' %>
+13 <%= stylesheet_link_tag 'rtl', :media => 'all' if l(:direction) == 'rtl' %>
+14 <% end %>
 
-<%= yield :head_tags -%>
-+ <%= heads_for_theme %>```
+21 <%= yield :head_tags -%>
+22 + <%= heads_for_theme %>
+23 + <% if Backlogs.setting[:show_redmine_std_header] %>
+24 + <%= stylesheet_link_tag 'application', :media => 'all' %>
+25 + <% end %>
+```
 support backlog plugin version v 1.0.6
 ## License
 
