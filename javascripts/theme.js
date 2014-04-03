@@ -1,3 +1,12 @@
+var backlog_status_color = [
+	{name:"todo",bgcolor:"#ffffff",txtcolor:"#333333"},
+	{name:"未",bgcolor:"#ffffff",txtcolor:"#333333"},
+	{name:"In Process",bgcolor:"#F2F2FC"},
+	{name:"作業中",bgcolor:"#F2F2FC"},
+	{name:"To Verify",bgcolor:"#F8EDD1"},
+	{name:"確認中",bgcolor:"#F8EDD1"},
+];
+
 jQuery.extend(jQuery.easing, {
 	easeOutQuint: function (x, t, b, c, d) {
 		return c*((t=t/d-1)*t*t*t*t + 1) + b;
@@ -26,9 +35,47 @@ jQuery.extend(jQuery.easing, {
 		return c/2*((t-=2)*t*(((s*=(1.525))+1)*t + s) + 2) + b;
 	},
 });
+function setStatusClass(el,key,status){
+	var story = el.eq(key).parents(".model.story.fff-wrapper");
+	for (var i=0; i < backlog_status_color.length; i++) {
+		if(status == backlog_status_color[i].name){
+			var color = backlog_status_color[i].txtcolor;
+			if(color){
+				story.css({
+					'cssText':"color:"+color+"!important",
+					"background-color":backlog_status_color[i].bgcolor,
+				});
+			}else{
+				 story.css({
+					"background-color":backlog_status_color[i].bgcolor,
+				});
+			}
+		};
+	};
+}
 
 $(function()
 {
+	/**
+	 * backlog status color
+	 */
+	var status = $(".status_id.editable.story_field .t");
+	for (var i = 0; i < status.length; i++) {
+		var j = status.eq(i).text();
+		setStatusClass(status,i,j);
+	};
+	var status = $(".story-swimlane .story.closed");
+	for (var i = 0; i < status.length; i++) {
+		status.eq(i).parents(".story-swimlane").addClass("status_closed");
+	};
+
+	/**
+	 * backlog & kanban themes.js 
+	 */
+	var script = document.createElement("script");
+	script.setAttribute("src", "/themes/redmine-theme-gitmike-design/javascripts/jquery.ui.touch-punch.min.js");
+	document.getElementsByTagName("head")[0].appendChild(script);
+
 
 	$("#project_quick_jump_box").css({"display":"inline"}).appendTo("#header h1");
 	/**

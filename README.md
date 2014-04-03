@@ -24,6 +24,11 @@ It is based on A1 theme version 1.0.3 by Kirill Bezrukov www.redminecrm.com.
 * Redmine is not a cause, it is in the design? 
 * this is designed to put up this hypothesis.
 
+## Browser support
+* IE10+
+* Safari
+* Chrome
+* FireFox
 
 ## Installation
 
@@ -41,11 +46,32 @@ It allows you to use the theme.js by performing the following editing.
 redmine/plugins/redmine_backlogs/app/views/layouts/rb.html.erb
 
 ```
-<%= stylesheet_link_tag 'global_print.css', :plugin => 'redmine_backlogs', :media => 'print' %>
+11 <% if Backlogs.setting[:show_redmine_std_header] %>
+12 - <%= stylesheet_link_tag 'application', :media => 'all' %>
+13 <%= stylesheet_link_tag 'rtl', :media => 'all' if l(:direction) == 'rtl' %>
+14 <% end %>
 
-<%= yield :head_tags -%>
-+ <%= heads_for_theme %>```
-support backlog plugin version v 1.0.6
+21 <%= yield :head_tags -%>
+22 + <%= heads_for_theme %>
+23 + <% if Backlogs.setting[:show_redmine_std_header] %>
+24 + <%= stylesheet_link_tag 'application', :media => 'all' %>
+25 + <% end %>
+```
+support backlog plugin version v 1.0.6### theme.js edit
+
+redmine/public/themes/redmine-theme-gitmike-design/javascripts/theme.js
+
+```
+var backlog_status_color = [
+	{name:"todo",bgcolor:"#ffffff",txtcolor:"#333333"},
+	{name:"未",bgcolor:"#ffffff",txtcolor:"#333333"},
+	{name:"In Process",bgcolor:"#F2F2FC"},
+	{name:"作業中",bgcolor:"#F2F2FC"},
+	{name:"To Verify",bgcolor:"#F8EDD1"},
+	{name:"確認中",bgcolor:"#F8EDD1"},
+];
+```
+Please change to match the ticket status value of your redmine.
 ## License
 
 GPL3
@@ -54,3 +80,5 @@ GPL3
 
 * r8: issue page design.
 * r7: backlog,kanban page desgin.
+* r9: bugfix
+* r11: backlog status background color.

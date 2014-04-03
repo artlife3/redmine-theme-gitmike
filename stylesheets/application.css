@@ -391,6 +391,9 @@ h1{
 #quick-search input[type="text"]{
 	width:160px;
 }
+#project_quick_jump_box{
+	margin-left:5px;
+}
 #main-menu{
 	background: -webkit-linear-gradient(top, #61B3E9, #115786);
 	background: -moz-linear-gradient(top, #61B3E9, #115786);
@@ -524,8 +527,16 @@ a:link.close_sprint{
 	padding-bottom:10px !important;
 }
 #backlogs_container .stories{
-	background-color:#4e83f1 !important;
+	background: #4e83f1;
 	color: #2957C9 !important;
+}
+#backlogs_container .stories .story{
+	background-image: none;
+	background-color: transparent;
+	-ms-filter: none;
+	filter: none;
+	background-color: #F2F2FC;
+	color: #2957C9;
 }
 #backlogs_container .closedbacklog, #backlogs_container .backlog{
 	border: 5px solid #2957C9 !important;
@@ -533,6 +544,25 @@ a:link.close_sprint{
 	padding-bottom:10px;
 	background: #2957C9 !important;
 }
+#backlogs_container .stories .story.closed{
+	background: #eee;
+	color: #A79F9F !important;
+}
+.story-swimlane.status_closed{
+	background: #eee;
+	opacity:0.5;
+}
+#backlogs_container .stories .story.status_toverify{
+	background-color: #F8EDD1;
+}
+#backlogs_container .stories .story.status_inprocess{
+	background-color: #F2F2FC;
+}
+#backlogs_container .stories .story.status_todo{
+	background-color: #fff;
+	color: #2E2E30;
+}
+
 .ui-icon{
 	background: url(../images/ui-icons_222222_256x240_2.png) !important;
 }
@@ -541,6 +571,14 @@ a:link.close_sprint{
 }
 #backlogs_container .stories .story .subject{
 	white-space: nowrap !important;
+}
+.external{
+	word-wrap: break-word
+}
+.fff-left .project{
+	font-size:0.8em;
+	line-height:2em;
+	background-color:#A8C4ED;
 }
 
 /**
@@ -563,25 +601,6 @@ a:link.close_sprint{
 	background: -ms-linear-gradient(top, #F8FAFD, #F2F2FC) !important;
 	color: #2957C9 !important;
 }
-
-.model.story.fff-wrapper.closed{
-	background: #eee !important;
-	color: #A79F9F !important;
-}
-.story-swimlane.status_closed{
-	background: #eee !important;
-	opacity:0.5;
-}
-.model.story.fff-wrapper.status_toverify{
-	background: #F8EDD1 !important;
-}
-.model.story.fff-wrapper.status_inprocess{
-}
-.model.story.fff-wrapper.status_todo{
-	color: #2E2E30 !important;
-	background: white !important;
-}
-
 .label_sprint_impediments{
 	background: -webkit-gradient(linear, left top, left bottom, from(#F9EAD8), to(#FACB83)) !important;
 	background: -moz-linear-gradient(top, #F9EAD8, #FACB83) !important;
@@ -653,7 +672,7 @@ a:link.close_sprint{
 	width: 60px;
 	height: 21px;
 
-	background: #fff;
+	background:#fff;
 	background: -webkit-gradient(linear, 555% 20%, 0% 92%, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.0)), 
 		color-stop(.1,rgba(0, 0, 0, 0.2)));
 	background: -moz-linear-gradient(555% 0 180deg, rgba(0,0,0,0.1), rgba(0,0,0,0.2) 10%, rgba(0,0,0,0.0));
@@ -716,7 +735,6 @@ a:link.close_sprint{
     transform:  rotate(-19deg)
                         skew(-40deg,-3deg)
                         translate(-13px,-13px);
-
 }
 .story .id{
 background-color: #DFE6FC !important;
@@ -852,12 +870,10 @@ div#issue-changesets .changeset{
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-
 	border: 1px solid #ccc;
 	-webkit-box-shadow: 2px 3px 5px rgba(0,0,0,0.3);
 	-moz-box-shadow: 2px 3px 5px rgba(0,0,0,0.3);
 	box-shadow: 2px 3px 5px rgba(0,0,0,0.3);
-	
 }
 #history .balloon-right:after, #history .balloon-right:before {
 	top: 30%;
@@ -869,7 +885,6 @@ div#issue-changesets .changeset{
 	position: absolute;
 	pointer-events: none;
 }
-
 #history .balloon-right:after {
 	border-color: rgba(238, 248, 185, 0);
 	border-left-color: #EEF8B9;
