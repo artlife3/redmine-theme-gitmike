@@ -24,6 +24,11 @@ It is based on A1 theme version 1.0.3 by Kirill Bezrukov www.redminecrm.com.
 * Redmine is not a cause, it is in the design? 
 * this is designed to put up this hypothesis.
 
+## Browser support
+* IE10+
+* Safari
+* Chrome
+* FireFox
 
 ## Installation
 
