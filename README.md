@@ -4,7 +4,7 @@ Redmine gitmike-design theme
 This is the theme of the design easy for beginners to understand Redmine. 
 It is based on A1 theme version 1.0.3 by Kirill Bezrukov www.redminecrm.com.
 
-## Screenshot[screenshot1]: https://github.com/artlife3/redmine-theme-gitmike-design/blob/master/screenshot/backlog_01.png?raw=true "gitmike-design screenshot"
+## Screenshot[screenshot1]: https://github.com/artlife3/redmine-theme-gitmike-design/blob/master/screenshot/backlog_02.png?raw=true "gitmike-design screenshot"
 [screenshot2]: https://github.com/artlife3/redmine-theme-gitmike-design/blob/master/screenshot/backlog_kanban_01.png?raw=true "gitmike-design screenshot"
 
 [screenshot3]: https://github.com/artlife3/redmine-theme-gitmike-design/blob/master/screenshot/issue.png?raw=true "gitmike-design screenshot"
