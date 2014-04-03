@@ -1,10 +1,10 @@
 var backlog_status_color = [
-	{classname:"status_todo",name:"todo",bgcolor:"#ffffff",txtcolor:"#333333"},
-	{classname:"status_todo",name:"未",bgcolor:"#ffffff",txtcolor:"#333333"},
-	{classname:"status_inprocess",name:"In Process",bgcolor:"#F2F2FC"},
-	{classname:"status_inprocess",name:"作業中",bgcolor:"#F2F2FC"},
-	{classname:"status_toverify",name:"To Verify",bgcolor:"#F8EDD1"},
-	{classname:"status_toverify",name:"確認中",bgcolor:"#F8EDD1"},
+	{name:"todo",bgcolor:"#ffffff",txtcolor:"#333333"},
+	{name:"未",bgcolor:"#ffffff",txtcolor:"#333333"},
+	{name:"In Process",bgcolor:"#F2F2FC"},
+	{name:"作業中",bgcolor:"#F2F2FC"},
+	{name:"To Verify",bgcolor:"#F8EDD1"},
+	{name:"確認中",bgcolor:"#F8EDD1"},
 ];
 
 jQuery.extend(jQuery.easing, {

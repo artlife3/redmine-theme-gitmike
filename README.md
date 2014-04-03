@@ -57,7 +57,21 @@ redmine/plugins/redmine_backlogs/app/views/layouts/rb.html.erb
 24 + <%= stylesheet_link_tag 'application', :media => 'all' %>
 25 + <% end %>
 ```
-support backlog plugin version v 1.0.6
+support backlog plugin version v 1.0.6### theme.js edit
+
+redmine/public/themes/redmine-theme-gitmike-design/javascripts/theme.js
+
+```
+var backlog_status_color = [
+	{name:"todo",bgcolor:"#ffffff",txtcolor:"#333333"},
+	{name:"未",bgcolor:"#ffffff",txtcolor:"#333333"},
+	{name:"In Process",bgcolor:"#F2F2FC"},
+	{name:"作業中",bgcolor:"#F2F2FC"},
+	{name:"To Verify",bgcolor:"#F8EDD1"},
+	{name:"確認中",bgcolor:"#F8EDD1"},
+];
+```
+Please change to match the ticket status value of your redmine.
 ## License
 
 GPL3
@@ -66,3 +80,5 @@ GPL3
 
 * r8: issue page design.
 * r7: backlog,kanban page desgin.
+* r9: bugfix
+* r11: backlog status background color.
