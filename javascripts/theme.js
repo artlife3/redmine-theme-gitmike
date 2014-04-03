@@ -72,12 +72,15 @@ $(function()
 	/**
 	 * backlog & kanban themes.js 
 	 */
-	var script = document.createElement("script");
-	script.setAttribute("src", "/themes/redmine-theme-gitmike-design/javascripts/jquery.ui.touch-punch.min.js");
-	document.getElementsByTagName("head")[0].appendChild(script);
+	// var script = document.createElement("script");
+	// script.setAttribute("src", "/themes/redmine-theme-gitmike-design/javascripts/jquery.ui.touch-punch.min.js");
+	// document.getElementsByTagName("head")[0].appendChild(script);
 
-
+	/**
+	 * #project_quick_jump_box
+	 */
 	$("#project_quick_jump_box").css({"display":"inline"}).appendTo("#header h1");
+
 	/**
 	 * account
 	 */
