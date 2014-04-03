@@ -391,6 +391,9 @@ h1{
 #quick-search input[type="text"]{
 	width:160px;
 }
+#project_quick_jump_box{
+	margin-left:5px;
+}
 #main-menu{
 	background: -webkit-linear-gradient(top, #61B3E9, #115786);
 	background: -moz-linear-gradient(top, #61B3E9, #115786);
