@@ -549,7 +549,7 @@ a:link.close_sprint{
 	color: #A79F9F !important;
 }
 .story-swimlane.status_closed{
-	background: #eee;
+	background: #cccccc;
 	opacity:0.5;
 }
 #backlogs_container .stories .story.status_toverify{
