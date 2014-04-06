@@ -562,9 +562,6 @@ a:link.close_sprint{
 	background-color: #fff;
 	color: #2E2E30;
 }
-#backlogs_container .stories .story.editing .status_id{
-	border: 2px solid red !important;
-}
 
 .ui-icon{
 	background: url(../images/ui-icons_222222_256x240_2.png) !important;
@@ -791,7 +788,6 @@ div#issue-changesets h3{
 }
 div#issue-changesets .changeset:first-child{
 	margin-top:10px;
-	border:1px solid red;
 }
 div#issue-changesets .changeset{
 	padding: 3px 15px !important;
