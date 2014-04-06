@@ -302,8 +302,8 @@ a.buy-button.blue { background: #4C728A !important; background-image: -webkit-gr
 
 
 *, #header,h1, h2, h3, h4 {
-	font-family:"Hiragino Kaku Gothic Pro","HiraKakuPro-W3","ƒƒCƒŠƒI", Meiryo,
-	"ƒqƒ‰ƒMƒmŠpƒS Pro W3","‚l‚r ‚oƒSƒVƒbƒN","MS PGothic",Arial, Helvetica,"Droid Sans Japanese",sans-serif;
+	font-family:"Hiragino Kaku Gothic Pro","HiraKakuPro-W3","ï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½I", Meiryo,
+	"ï¿½qï¿½ï¿½ï¿½Mï¿½mï¿½pï¿½S Pro W3","ï¿½lï¿½r ï¿½oï¿½Sï¿½Vï¿½bï¿½N","MS PGothic",Arial, Helvetica,"Droid Sans Japanese",sans-serif;
 }
 
 /**
@@ -561,6 +561,9 @@ a:link.close_sprint{
 #backlogs_container .stories .story.status_todo{
 	background-color: #fff;
 	color: #2E2E30;
+}
+#backlogs_container .stories .story.editing .status_id{
+	border: 2px solid red !important;
 }
 
 .ui-icon{
@@ -856,6 +859,20 @@ div#issue-changesets .changeset{
 .action-show #history{
 	position: relative;
 }
+.action-show #history .wiki{
+	padding: 0px 8px;
+	background-color: #F5E7BB;
+	background-color: #fff;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+
+	border: 1px solid #ccc;
+	-webkit-box-shadow:  2px 3px 5px rgba(0,0,0,0.3) inset;
+	-moz-box-shadow:  2px 3px 5px rgba(0,0,0,0.3) inset;
+	box-shadow:  2px 3px 5px rgba(0,0,0,0.3) inset;
+}
+
 #history div.journal{
 	padding: 15px 15px;
 	border:none;
