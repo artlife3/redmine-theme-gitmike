@@ -5,6 +5,8 @@ var backlog_status_color = [
 	{name:"作業中",bgcolor:"#F2F2FC",txtcolor:"#2957C9"},
 	{name:"To Verify",bgcolor:"#F8EDD1",txtcolor:"#2957C9"},
 	{name:"確認中",bgcolor:"#F8EDD1",txtcolor:"#2957C9"},
+	{name:"終了",bgcolor:"#eee",txtcolor:"#A79F9F"},
+	{name:"Done",bgcolor:"#eee",txtcolor:"#A79F9F"},
 ];
 
 jQuery.extend(jQuery.easing, {
