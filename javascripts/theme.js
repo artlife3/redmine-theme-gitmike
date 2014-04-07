@@ -37,11 +37,10 @@ jQuery.extend(jQuery.easing, {
 		return c/2*((t-=2)*t*(((s*=(1.525))+1)*t + s) + 2) + b;
 	},
 });
-function setStatusClass(el,key,status){
-	var story = el.eq(key).parents(".model.story.fff-wrapper");
+function setStatusClass($parent,status){
 	for (var i=0; i < backlog_status_color.length; i++) {
 		if(status == backlog_status_color[i].name){
-			story.css({
+			$parent.css({
 				'cssText':"color:"+backlog_status_color[i].txtcolor+"!important",
 				"background-color":backlog_status_color[i].bgcolor,
 			});
@@ -56,18 +55,19 @@ $(function()
 	 */
 	var status = $(".status_id.editable.story_field .t");
 	for (var i = 0; i < status.length; i++) {
-		var j = status.eq(i).text();
-		setStatusClass(status,i,j);
+		setStatusClass(status.eq(i).parents(".model.story.fff-wrapper"),status.eq(i).text());
 	};
 	var status = $(".story-swimlane .story.closed");
 	for (var i = 0; i < status.length; i++) {
 		status.eq(i).parents(".story-swimlane").addClass("status_closed");
 	};
 	$(".model.story.fff-wrapper").click(function(){
-		var $el = $(this).find(".editors");
-		var status = $(this).find(".status_id.editor");
-		status.change(function(){
-			setStatusClass($el,0,status.find("option:selected").text());
+		var $el = $(this);
+		var status = $el.find(".status_id.editor");
+		$(this).find(".save").click(function(){
+			console.log($el.attr("class"));
+			
+			setStatusClass($el,status.find("option:selected").text());
 		});
 	});
 	
