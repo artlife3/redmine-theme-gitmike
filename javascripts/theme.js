@@ -1,10 +1,10 @@
 var backlog_status_color = [
 	{name:"todo",bgcolor:"#ffffff",txtcolor:"#333333"},
 	{name:"未",bgcolor:"#ffffff",txtcolor:"#333333"},
-	{name:"In Process",bgcolor:"#F2F2FC"},
-	{name:"作業中",bgcolor:"#F2F2FC"},
-	{name:"To Verify",bgcolor:"#F8EDD1"},
-	{name:"確認中",bgcolor:"#F8EDD1"},
+	{name:"In Process",bgcolor:"#F2F2FC",txtcolor:"#2957C9"},
+	{name:"作業中",bgcolor:"#F2F2FC",txtcolor:"#2957C9"},
+	{name:"To Verify",bgcolor:"#F8EDD1",txtcolor:"#2957C9"},
+	{name:"確認中",bgcolor:"#F8EDD1",txtcolor:"#2957C9"},
 ];
 
 jQuery.extend(jQuery.easing, {
@@ -39,17 +39,10 @@ function setStatusClass(el,key,status){
 	var story = el.eq(key).parents(".model.story.fff-wrapper");
 	for (var i=0; i < backlog_status_color.length; i++) {
 		if(status == backlog_status_color[i].name){
-			var color = backlog_status_color[i].txtcolor;
-			if(color){
-				story.css({
-					'cssText':"color:"+color+"!important",
-					"background-color":backlog_status_color[i].bgcolor,
-				});
-			}else{
-				 story.css({
-					"background-color":backlog_status_color[i].bgcolor,
-				});
-			}
+			story.css({
+				'cssText':"color:"+backlog_status_color[i].txtcolor+"!important",
+				"background-color":backlog_status_color[i].bgcolor,
+			});
 		};
 	};
 }
@@ -68,7 +61,14 @@ $(function()
 	for (var i = 0; i < status.length; i++) {
 		status.eq(i).parents(".story-swimlane").addClass("status_closed");
 	};
-
+	$(".model.story.fff-wrapper").click(function(){
+		var $el = $(this).find(".editors");
+		var status = $(this).find(".status_id.editor");
+		status.change(function(){
+			setStatusClass($el,0,status.find("option:selected").text());
+		});
+	});
+	
 	/**
 	 * backlog & kanban themes.js 
 	 */
