@@ -487,9 +487,6 @@ a:link.close_sprint{
 /**
  * 	detail
  */
-.items{
-	background-color: red !important;
-}
 .ui-state-default{
 	background:#fff !important;
 	color: #BAC7E7 !important;
