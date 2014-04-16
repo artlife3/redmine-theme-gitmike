@@ -853,7 +853,7 @@ div#issue-changesets .changeset{
 	position: relative;
 }
 .action-show #history .wiki{
-	padding: 0px 8px;
+	padding: 7px 8px;
 	background-color: #F5E7BB;
 	background-color: #fff;
 	-webkit-border-radius: 8px;
