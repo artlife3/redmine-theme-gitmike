@@ -947,3 +947,11 @@ div#issue-changesets .changeset{
 	margin-top: -11px;
 
 }
+
+/**
+ * 	wiki
+ */
+
+div.wiki p img{
+	border:4px solid #61b3e9;
+}
