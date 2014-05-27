@@ -197,8 +197,10 @@ $(function()
 	/**
 	 * toc scroller
 	 */
-	$(".wiki.wiki-page").append('<div class="toc_home"></div>');
-//	$(".toc_home").css({"left":$(".contextual img").offset().left-0+"px"});
+	$(".wiki .toc").each(function(){
+		$(".wiki.wiki-page").append('<div class="toc_home"></div>');
+	});
+
 	$(".wiki .toc a").click(function(){
 		var href= $(this).attr("href").replace("#","");
 		var position = $('a[name="'+href+'"]').offset().top;

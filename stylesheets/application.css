@@ -981,8 +981,8 @@ div.wiki p img{
 	background-color: #ffffdd;
 	padding:20px;
 }
-.wiki{
-	/*position: relative;*/
+.toc{
+	background: url(../images/textures/131.jpg);
 }
 .toc_home{
 	/*position: absolute;*/
