@@ -951,9 +951,54 @@ div#issue-changesets .changeset{
 /**
  * 	wiki
  */
+div.wiki ul.toc{
+	width:95%;
+	padding: 20px;
+}
+div.wiki ul.toc li{
+	margin: 15px 30px 15px 20px;
+	font-size: 1.1em;
+	list-style:decimal;
+}
+div.wiki ul.toc li a{
+	display: block;
+	margin-bottom:5px;
+	border-bottom:1px dotted #111;
+}
+div.wiki ul.toc li li{
+	font-size: 1em;
+	/*padding-bottom:5px;*/
+}
+
+
 div.wiki p img{
 	border:2px solid #61b3e9;
 	-webkit-box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
 	-moz-box-shadow: 2px 3px 5px rgba(0,0,0,0.3);
 	box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+}
+.attachments{
+	background-color: #ffffdd;
+	padding:20px;
+}
+.wiki{
+	/*position: relative;*/
+}
+.toc_home{
+	/*position: absolute;*/
+	position: fixed;
+	left: 30px;
+	bottom:85px;
+	width: 64px;
+	height: 64px;
+	background: url(../images/icon/64x64/arrow_up.png) no-repeat center center;
+	background-size: 100% 80%;
+	cursor: pointer;
+	user-select: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	opacity:0.3;
+}
+.contextual img{
 }

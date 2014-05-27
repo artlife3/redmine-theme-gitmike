@@ -27,6 +27,12 @@ jQuery.extend(jQuery.easing, {
 			return c*(7.5625*(t-=(2.625/2.75))*t + .984375) + b;
 		}
 	},
+	easeInExpo: function (x, t, b, c, d) {
+	return (t == 0) ? b : c * Math.pow(2, 10 * (t / d - 1)) + b;
+	},
+	easeOutExpo: function (x, t, b, c, d) {
+	return (t == d) ? b + c : c * (-Math.pow(2, -10 * t / d) + 1) + b;
+	},
 	easeOutBack: function (x, t, b, c, d, s) {
 		if (s == undefined) s = 1.70158;
 		return c*((t=t/d-1)*t*((s+1)*t + s) + 1) + b;
@@ -188,6 +194,26 @@ $(function()
 				}
 		});
 	}
+	/**
+	 * toc scroller
+	 */
+	$(".wiki.wiki-page").append('<div class="toc_home"></div>');
+//	$(".toc_home").css({"left":$(".contextual img").offset().left-0+"px"});
+	$(".wiki .toc a").click(function(){
+		var href= $(this).attr("href").replace("#","");
+		var position = $('a[name="'+href+'"]').offset().top;
+		$('html,body').stop().animate({ scrollTop: position }, 500, "easeOutExpo",function () {
+			//callback
+		});
+		return false;
+	});
+
+	$(".toc_home").click(function(){
+		var position = $(".wiki.wiki-page .toc").offset().top;
+		$('html,body').stop().animate({ scrollTop: position }, 500, "easeOutExpo",function () {
+			//callback
+		});
+	});
 });
 
 
