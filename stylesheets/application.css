@@ -988,7 +988,7 @@ div.wiki p img{
 	/*position: absolute;*/
 	position: fixed;
 	left: 30px;
-	bottom:85px;
+	bottom:20px;
 	width: 64px;
 	height: 64px;
 	background: url(../images/icon/64x64/arrow_up.png) no-repeat center center;
