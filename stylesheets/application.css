@@ -981,6 +981,10 @@ div.wiki p img{
 	background-color: #ffffdd;
 	padding:20px;
 }
+
+/**
+ * 	toc
+ */
 .toc{
 	background: url(../images/textures/131.jpg);
 }
@@ -1000,5 +1004,84 @@ div.wiki p img{
 	-moz-user-select: none;
 	opacity:0.3;
 }
-.contextual img{
+
+/**
+ * 	.pages-hierarchy
+ */
+.wiki > ul.pages-hierarchy{
+	padding:30px 20px;
+	margin-bottom: 30px;
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	border: 1px solid #ccc;
+	-webkit-box-shadow: 2px 3px 5px rgba(0,0,0,0.3) inset;
+	-moz-box-shadow: 2px 3px 5px rgba(0,0,0,0.3) inset;
+	box-shadow: 2px 3px 5px rgba(0,0,0,0.3) inset;
+}
+ul.pages-hierarchy{
+	/*background-color: #B1CFE2;*/
+	background: #ffffdd url(../images/textures/131.jpg);
+}
+ul.pages-hierarchy,
+ul.pages-hierarchy ul {
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+ul.pages-hierarchy ul {
+	margin-left:10px; 
+	position:relative;
+}
+ul.pages-hierarchy ul:before {
+	content:"";
+	display:block;
+	width:0;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	border-left:1px solid #883232;
+}
+ul.pages-hierarchy li {
+	margin:0;
+	padding:3px 12px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size:13px;
+	line-height:20px;
+	color:#ccc;
+	font-weight:normal;
+	position:relative;
+}
+ul.pages-hierarchy li a { 
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size:14px;
+	line-height:20px;
+	color:#ccc;
+	font-weight:bold;
+	position:relative;
+}
+ul.pages-hierarchy li a:hover,
+ul.pages-hierarchy li a:hover+ul li a {
+	color: RGBA(213, 235, 227, 1);
+}
+ul.pages-hierarchy ul li:before {
+	content:"";
+	display:block;
+	width:8px;
+	height:0;
+	border-top:1px solid #883232;
+	position:absolute;
+	top:10px;
+	left: 0;
+}
+ul.pages-hierarchy ul li:last-child:before {
+	background: #ffffdd; 
+	height: auto;
+	top: 10px; 
+	bottom: 0;
 }
