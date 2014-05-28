@@ -1047,7 +1047,7 @@ ul.pages-hierarchy ul:before {
 }
 ul.pages-hierarchy li {
 	margin:0;
-	padding:3px 12px;
+	padding:2px 15px;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size:13px;
@@ -1059,7 +1059,7 @@ ul.pages-hierarchy li {
 ul.pages-hierarchy li a { 
 	text-decoration: none;
 	text-transform: uppercase;
-	font-size:14px;
+	font-size:13px;
 	line-height:20px;
 	color:#ccc;
 	font-weight:bold;
