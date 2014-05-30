@@ -1022,7 +1022,7 @@ div.wiki p img{
 	box-shadow: 2px 3px 5px rgba(0,0,0,0.3) inset;
 }
 ul.pages-hierarchy{
-	background-color:#F1F5DE;
+	background-color:#D9F3F1;
 }
 ul.pages-hierarchy,
 ul.pages-hierarchy ul {
@@ -1042,7 +1042,7 @@ ul.pages-hierarchy ul:before {
 	top:0;
 	bottom:0;
 	left:0;
-	border-left:1px solid #A9BE9D;
+	border-left:1px solid #66AEC0;
 }
 ul.pages-hierarchy li {
 	margin:0;
@@ -1073,13 +1073,13 @@ ul.pages-hierarchy ul li:before {
 	display:block;
 	width:8px;
 	height:0;
-	border-top:1px solid #A9BE9D;
+	border-top:1px solid #66AEC0;
 	position:absolute;
 	top:10px;
 	left: 0;
 }
 ul.pages-hierarchy ul li:last-child:before {
-	background: #F1F5DE; 
+	background: #D9F3F1; 
 	height: auto;
 	top: 10px; 
 	bottom: 0;
