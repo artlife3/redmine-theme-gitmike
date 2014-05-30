@@ -1022,7 +1022,7 @@ div.wiki p img{
 	box-shadow: 2px 3px 5px rgba(0,0,0,0.3) inset;
 }
 ul.pages-hierarchy{
-	background-color:#D9F3F1;
+	background-color:#F0FAF9;
 }
 ul.pages-hierarchy,
 ul.pages-hierarchy ul {
@@ -1079,7 +1079,7 @@ ul.pages-hierarchy ul li:before {
 	left: 0;
 }
 ul.pages-hierarchy ul li:last-child:before {
-	background: #D9F3F1; 
+	background: #F0FAF9; 
 	height: auto;
 	top: 10px; 
 	bottom: 0;
