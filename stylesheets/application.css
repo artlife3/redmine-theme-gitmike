@@ -1022,8 +1022,7 @@ div.wiki p img{
 	box-shadow: 2px 3px 5px rgba(0,0,0,0.3) inset;
 }
 ul.pages-hierarchy{
-	/*background-color: #B1CFE2;*/
-	background: #ffffdd url(../images/textures/131.jpg);
+	background-color:#F1F5DE;
 }
 ul.pages-hierarchy,
 ul.pages-hierarchy ul {
@@ -1032,7 +1031,7 @@ ul.pages-hierarchy ul {
 	padding:0;
 }
 ul.pages-hierarchy ul {
-	margin-left:10px; 
+	margin-left:15px; 
 	position:relative;
 }
 ul.pages-hierarchy ul:before {
@@ -1043,11 +1042,11 @@ ul.pages-hierarchy ul:before {
 	top:0;
 	bottom:0;
 	left:0;
-	border-left:1px solid #883232;
+	border-left:1px solid #A9BE9D;
 }
 ul.pages-hierarchy li {
 	margin:0;
-	padding:2px 15px;
+	padding:2px 20px;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size:13px;
@@ -1074,13 +1073,13 @@ ul.pages-hierarchy ul li:before {
 	display:block;
 	width:8px;
 	height:0;
-	border-top:1px solid #883232;
+	border-top:1px solid #A9BE9D;
 	position:absolute;
 	top:10px;
 	left: 0;
 }
 ul.pages-hierarchy ul li:last-child:before {
-	background: #ffffdd; 
+	background: #F1F5DE; 
 	height: auto;
 	top: 10px; 
 	bottom: 0;
