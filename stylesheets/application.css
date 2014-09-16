@@ -85,18 +85,18 @@ h2, h3, h4 { border-bottom: 0px; }
 
 .wiki h1, .wiki h2, .wiki h3 { border-bottom: 0px; }
 .wiki.wiki-page h1 {
-text-shadow: 0 2px 5px #aaa;
-padding: 0 15px;
-background: #D1EE77;
--webkit-border-radius: 5px;
--moz-border-radius: 5px;
-border-radius: 5px;
-border: 1px solid #ccc;
--webkit-box-shadow:  2px 3px 5px rgba(0,0,0,0.3) inset;
--moz-box-shadow:  2px 3px 5px rgba(0,0,0,0.3) inset;
-box-shadow:  2px 3px 5px rgba(0,0,0,0.3) inset;
+	text-shadow: 0 2px 5px #aaa;
+	padding: 0 15px;
+	background: #D1EE77;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	-webkit-box-shadow:  2px 3px 5px rgba(0,0,0,0.3) inset;
+	-moz-box-shadow:  2px 3px 5px rgba(0,0,0,0.3) inset;
+	box-shadow:  2px 3px 5px rgba(0,0,0,0.3) inset;
 }
-.wiki.wiki-page h2 { border-bottom: 2px solid #656E4A; margin-top:10px; }
+.wiki.wiki-page h2 { border-bottom: 2px solid #656E4A; border-left: 15px solid #656E4A; padding-left: 15px; margin-top:10px; }
 .wiki.wiki-page h3 { border-bottom: 2px dotted #656E4A; margin-top:10px; }
 .wiki.wiki-page h4 { border-bottom: 1px dotted #656E4A; margin-top:10px; }
 
