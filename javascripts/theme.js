@@ -92,12 +92,19 @@ $(function()
 	/**
 	 * account
 	 */
-	$("#account").css({"width":"0","overflow":"hidden"});
-	$("#account,#loggedas").hover(
+	$("#account").each(
 		function(){
-			$("#account").stop().animate({"width":"160px"});
-		},function(){
-			$("#account").stop().animate({"width":0});
+			var anchor = $(this).find('li a');
+			if( anchor.hasClass('logout') ) {
+				$("#account").css({"width":"0","overflow":"hidden"});
+				$("#account,#loggedas").hover(
+					function(){
+						$("#account").stop().animate({"width":"160px"});
+					},function(){
+						$("#account").stop().animate({"width":0});
+					}
+				);
+			}
 		}
 	);
 	
