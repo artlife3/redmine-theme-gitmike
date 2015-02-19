@@ -848,7 +848,7 @@ div#issue-changesets .changeset{
 	-khtml-user-select: none;
 	-moz-user-select: none;
 }
-.action-show .description .wiki{
+.action-show .description .wiki, .action-show .message .wiki{
 	margin:0 0 15px 0;
 	padding: 8px 8px;
 	background-color: #F5E7BB;
@@ -861,6 +861,10 @@ div#issue-changesets .changeset{
 	-webkit-box-shadow:  2px 3px 5px rgba(0,0,0,0.3) inset;
 	-moz-box-shadow:  2px 3px 5px rgba(0,0,0,0.3) inset;
 	box-shadow:  2px 3px 5px rgba(0,0,0,0.3) inset;
+}
+.controller-messages.action-show .message.reply{
+	padding-top:10px;
+	background-color: #D1EE77;
 }
 .action-show #history{
 	position: relative;
