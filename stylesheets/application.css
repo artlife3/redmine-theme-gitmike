@@ -862,6 +862,9 @@ div#issue-changesets .changeset{
 	-moz-box-shadow:  2px 3px 5px rgba(0,0,0,0.3) inset;
 	box-shadow:  2px 3px 5px rgba(0,0,0,0.3) inset;
 }
+.action-show .message .wiki{
+	padding: 19px;
+}
 .controller-messages.action-show .message.reply{
 	padding-top:10px;
 	background-color: #D1EE77;
