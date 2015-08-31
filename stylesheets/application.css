@@ -853,7 +853,7 @@ div#issue-changesets .changeset{
 	-khtml-user-select: none;
 	-moz-user-select: none;
 }
-.action-show .issue .wiki, .action-show .message .wiki{
+.action-show .description .wiki, .action-show .message .wiki{
 	margin:0 0 15px 0;
 	padding: 8px 8px;
 	background-color: #F5E7BB;
@@ -873,6 +873,7 @@ div#issue-changesets .changeset{
 .controller-messages.action-show .message.reply{
     padding-top:10px;
     background-color: #D1EE77;
+	padding: 19px;
 }
 .action-show #history{
 	position: relative;
