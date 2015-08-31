@@ -1,4 +1,4 @@
-//document.write("<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>");
-document.write("<script type='text/javascript' src='/themes/redmine-theme-gitmike-design/javascripts/theme_core.js' charset='UTF-8'></script>")
+document.write("<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js'></script>");
+document.write("<script type='text/javascript' src='/redmine/themes/redmine-theme-gitmike-design/javascripts/theme_core.js' charset='UTF-8'></script>")
 
 
